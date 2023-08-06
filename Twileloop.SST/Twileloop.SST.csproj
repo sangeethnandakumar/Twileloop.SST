@@ -1,31 +1,31 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net5.0</TargetFramework>
 
 		<Title>Twileloop.SST</Title>
+		<Product>Twileloop.SST</Product>
 		<Authors>Twileloop, Sangeeth Nandakumar</Authors>
 		<Company>Twileloop</Company>
-		<Product>Twileloop.SST</Product>
-		<Description>Gives you a reactive event based state management framework that centralises application state and give callbacks on state updates across application. It also allows you to write and read persistant states from an XML encoded defalate compressed file, an ideal solution for having data files</Description>
 		<Copyright>Twileloop</Copyright>
-		<PackageProjectUrl>https://github.com/sangeethnandakumar/Twileloop.SessionGuard</PackageProjectUrl>
+		<Description>A central state management library with features like state history, diffing, undo, redo, and deep state cloning.</Description>
+		<PackageProjectUrl>https://packages.twileloop.com/twileloop.sst</PackageProjectUrl>
 		<PackageIcon>logo.png</PackageIcon>
-		<RepositoryUrl>https://github.com/sangeethnandakumar/Twileloop.SessionGuard</RepositoryUrl>
+		<RepositoryUrl>https://github.com/sangeethnandakumar/Twileloop.SST</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageTags>reactive, session, state, peristance, singleton, state management</PackageTags>
+		<PackageTags>state, single source of truth, singleton, undo, redo, diff, central state handling</PackageTags>
 
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="ObjectComparator" Version="3.5.3" />
+		<PackageReference Include="ObjectComparator" Version="3.5.3" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="logo.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Update="logo.png">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 </Project>
