@@ -18,6 +18,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="ObjectComparator" Version="3.5.3" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Update="logo.png">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
