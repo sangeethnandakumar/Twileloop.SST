@@ -25,7 +25,8 @@ session.SetState(state =>
 });
 
 //Step 3: Get your state
-Console.WriteLine(JsonConvert.SerializeObject(session.State, Formatting.Indented));
+var myState = session.State;
+Console.WriteLine(JsonConvert.SerializeObject(myState, Formatting.Indented));
 
 //Step 4: Modify your state/SST from anywhere
 new OtherService().ModifyState();
