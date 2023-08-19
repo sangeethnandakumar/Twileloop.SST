@@ -28,7 +28,7 @@ namespace Twileloop.SST
                 if (instance == null)
                 {
                     instance = new SST<T>();
-                    instance.state = default(T);
+                    instance.state = Activator.CreateInstance<T>();
                 }
 
                 return instance;
