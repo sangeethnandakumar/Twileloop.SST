@@ -70,9 +70,9 @@ dotnet add package Twileloop.SST
 ```
 
 #### PLEASE NOTE :
-| ⚠️⚠️ Warning  ⚠️⚠️                            | 
-|------------------------------------------|
-| `Twileloop.SST` doesn't support the `record` type as your State model.
+⚠️⚠️ Warning  ⚠️⚠️
+
+`Twileloop.SST` doesn't support the `record` type as your State model.
 This is because diffing using `ObjectComparator` uses the default EqualityComparer which is for `records` compares values, over the reference if using a `class`.
 This impacts the diffing processes.
 
